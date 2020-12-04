@@ -1,3 +1,3 @@
 # Quantitave-Finance-Research
 
-![image info](./N&J.png)
+![image info](N&J.png)
