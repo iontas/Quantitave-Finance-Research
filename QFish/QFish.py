@@ -1,3 +1,3 @@
-from Portfolio import *
-from Returns import *
-from VaR import *
+from .Portfolio import *
+from .Returns import *
+from .VaR import *

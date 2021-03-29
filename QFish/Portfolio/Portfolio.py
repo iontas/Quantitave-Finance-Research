@@ -23,7 +23,7 @@ def  convert(portfolios):
 
 class Portfolio:
     """Initialize the assets as a tuple"""
-    def __init__(self, mean, covariance, riskfree = 0.005, stdDev,frequency=252):
+    def __init__(self, mean, covariance, stdDev, riskfree = 0.005, frequency=252):
         #self.returns = returns
         self.mean = mean
         self.covariance = covariance
