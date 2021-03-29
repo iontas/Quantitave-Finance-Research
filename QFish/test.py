@@ -3,7 +3,7 @@ import VaR
 import yfinance as yf
 import pandas as pd
 from typing import List
-import Portfolio as pt
+#import Portfolio as pt
 import matplotlib.pyplot as plt
 
 stocks = ['AAPL', 'AMZN', 'GOOG', 'JNJ', 'JPM']
@@ -16,14 +16,17 @@ history = tickers.history(period="3mo")['Close']
 df = pd.DataFrame(data=history)
 rt = rt.Returns(df)
 
+print(rt.logReturns())
+
+
 #print(rt.descriptiveStats())
 #print(df)
 #var = VaR.VaR(rt.meanReturn(),rt.stdvReturns(),0.95)
-mean = rt.meanReturn()
-covariance = rt.covReturns()
-portfolio = pt.Portfolio(mean, covariance)
+#mean = rt.meanReturn()
+#covariance = rt.covReturns()
+#portfolio = pt.Portfolio(mean, covariance)
 
-portfolio.plotEffecientFrontier()
+#portfolio.plotEffecientFrontier()
 
 #weights, returns, risk, portfolios = portfolio.meanVarPortfolio()
 #portfolio.meanVarPortfolio()
